@@ -57,12 +57,12 @@ spring:
                 -   id: server-service
                     uri: lb://SERVER-SERVICE
                     predicates:
-                        - Path=/api/v1/servers/**, /api/v1/categories/**
+                        - Path=/api/v1/servers/**
 
                 -   id: stream-service
                     uri: lb://STREAM-SERVICE
                     predicates:
-                        - Path=/api/v1/streams/**
+                        - Path=/api/v1/streams/**, /api/v1/categories/**
 
                 -   id: ticketing-service
                     uri: lb://TICKETING-SERVICE
