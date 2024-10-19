@@ -62,7 +62,7 @@ spring:
                 -   id: stream-service
                     uri: lb://STREAM-SERVICE
                     predicates:
-                        - Path=/api/v1/streams/**, /api/v1/categories/**
+                        - Path=/api/v1/streams/**, /api/v1/categories/**, /api/v1/series/**
 
                 -   id: ticketing-service
                     uri: lb://TICKETING-SERVICE
