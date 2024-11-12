@@ -75,7 +75,7 @@ spring:
                         - Path=/api/v1/users/**, /api/v1/groups/**, /api/v1/packages/**, /api/v1/profiles/**
 
                 -   id: administration-service
-                    uri: lb://USER-SERVICE
+                    uri: lb://ADMINISTRATION-SERVICE
                     predicates:
                         - Path=/api/v1/articles/**, /api/v1/ranks/**
 
