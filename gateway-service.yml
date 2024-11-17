@@ -72,12 +72,12 @@ spring:
                 -   id: user-service
                     uri: lb://USER-SERVICE
                     predicates:
-                        - Path=/api/v1/users/**, /api/v1/groups/**, /api/v1/packages/**, /api/v1/profiles/**, /api/v1/parameters/**
+                        - Path=/api/v1/users/**, /api/v1/groups/**, /api/v1/packages/**, /api/v1/profiles/**
 
                 -   id: administration-service
                     uri: lb://ADMINISTRATION-SERVICE
                     predicates:
-                        - Path=/api/v1/articles/**, /api/v1/ranks/**
+                        - Path=/api/v1/articles/**, /api/v1/ranks/**, /api/v1/parameters/**
 
                 -   id: device-swagger
                     uri: lb://DEVICE-SERVICE
@@ -130,12 +130,6 @@ spring:
 
     main:
         banner-mode: 'off'
-
-#    security:
-#        oauth2:
-#            resourceserver:
-#                jwt:
-#                    issuer-uri: http://keycloak:8080/realms/inwi-management
 
 springdoc:
     swagger-ui:
