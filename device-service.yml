@@ -5,7 +5,7 @@ spring:
     application:
         name: device-service
     datasource:
-        url: jdbc:postgres://localhost:5432/vidi-player
+        url: jdbc:postgresql://localhost:5432/vidi-player
         username: postgres
         password: password
     jpa:
